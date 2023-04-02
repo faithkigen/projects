@@ -62,12 +62,45 @@ name: ["Spaghetti", "Pancetta", "Eggs", "Parmesan cheese"]
     { step: "Add the cooked spaghetti and pancetta to the mixing bowl, and toss together." },
     { step: "Serve immediately, garnished with additional parmesan cheese and black pepper." }
   ])
-  recipe2.ingredients
+  recipe2.ingredients.create!(
+    name: ["Chicken breasts", "Greek yogurt", "Lemon juice", "Garlic", "Ginger", "Tomato paste", "Heavy cream", "Spices", "Salt", "Butter", "Cilantro"]
+)
+
+recipe2.instructions.create!([
+    { step: "In a large mixing bowl, combine yogurt, lemon juice, turmeric, cumin, coriander, paprika, cayenne pepper, and salt." },
+    { step: "Add chicken pieces to the marinade, making sure they are fully coated, and refrigerate for at least 1 hour, or overnight." },
+    { step: "Preheat the oven to 450°F (230°C)." },
+    { step: "Thread the chicken pieces onto skewers and discard any excess marinade." },
+    { step: "Arrange the skewers on a baking sheet and bake in the oven for 10-15 minutes, or until the chicken is cooked through." },
+    { step: "While the chicken is cooking, prepare the sauce. In a large saucepan, heat oil over medium-high heat." },
+    { step: "Add onion and cook until softened, about 5 minutes." },
+    { step: "Add garlic and ginger and cook for an additional minute." },
+    { step: "Add tomato sauce, cream, and garam masala to the saucepan, and stir to combine." },
+    { step: "Bring the sauce to a simmer and cook for 10-15 minutes, or until thickened." },
+    { step: "Add cooked chicken to the sauce and stir to coat." },
+    { step: "Serve the chicken tikka masala over rice, garnished with cilantro and accompanied by naan bread." }
+  ])
+  
   
   
   recipe3.ingredients.create!(
     name: "Beef, red wine (often red Burgundy), beef stock, lardons, onions, bouquet garni, pearl onions, mushrooms"
   )
+
+  recipe3.instructions.create!([
+    { step: "Preheat oven to 325°F (165°C)." },
+    { step: "Season beef with salt and pepper." },
+    { step: "In a large Dutch oven, cook lardons over medium heat until browned and crispy. Remove with a slotted spoon and set aside." },
+    { step: "Increase heat to medium-high and brown beef on all sides in the bacon fat. Remove beef and set aside." },
+    { step: "Reduce heat to medium and add onions to the Dutch oven. Cook until soft and translucent, about 5 minutes." },
+    { step: "Add mushrooms and pearl onions and cook for another 5 minutes, stirring occasionally." },
+    { step: "Return beef and lardons to the Dutch oven." },
+    { step: "Add red wine and beef stock to the Dutch oven and bring to a simmer." },
+    { step: "Add bouquet garni and cover the Dutch oven with a lid." },
+    { step: "Transfer to the preheated oven and cook for 2-3 hours, or until beef is tender." },
+    { step: "Remove bouquet garni and serve beef bourguignon hot, garnished with fresh parsley." }
+  ])
+  
 
   # create some dishes
 Dish.create(title: 'Tacos', subtitle: 'Mexico', image_url: 'https://example.com/tacos.jpg', description: 'A classic Mexican dish')
