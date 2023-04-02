@@ -1,0 +1,27 @@
+<%= form_with model: @recipe, local: true do |form| %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  
+  <%= form.label :category %>
+  <%= form.text_field :category %>
+  
+  <%= form.label :description %>
+  <%= form.text_area :description %>
+  
+  <%= form.label :image_url %>
+  <%= form.text_field :image_url %>
+  
+  <%= form.fields_for :ingredients do |ingredient_fields| %>
+    <%= ingredient_fields.label :name %>
+    <%= ingredient_fields.text_field :name %>
+    <%= ingredient_fields.check_box :_destroy %>
+  <% end %>
+  
+  <%= form.fields_for :instructions do |instruction_fields| %>
+    <%= instruction_fields.label :step %>
+    <%= instruction_fields.text_area :step %>
+    <%= instruction_fields.check_box :_destroy %>
+  <% end %>
+  
+  <%= form.submit "Create Recipe" %>
+<% end %>
