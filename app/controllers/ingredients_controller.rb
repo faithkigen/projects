@@ -3,9 +3,11 @@ class IngredientsController < ApplicationController
         ingredients = Ingredient.all
         render json: ingredients
     end
+
     def show
         ingredient = Ingredient.find(params[:id])
         render json: ingredient
+    end
 
     def create 
         ingredient = ingredients.build(ingredient_params)
@@ -14,14 +16,15 @@ class IngredientsController < ApplicationController
         else
             render json: {errors: ingredient.errors.full_message}, status: :unprocessable_entity 
         end
+    end
 
-        private
-        def set_recipe 
-            recipe = Recipe.find(params[:recipe_id])
-        end
+    private
 
-        def ingredient_params
-            params.require(:ingredient).permit(:name)
+    def set_recipe 
+        recipe = Recipe.find(params[:recipe_id])
+    end
 
-        end
+    def ingredient_params
+        params.require(:ingredient).permit(:name)
+    end
 end

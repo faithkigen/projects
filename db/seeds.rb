@@ -60,4 +60,10 @@ recipe1 = Recipe.create!(
   recipe1.instructions.create!(
     step: "Serve immediately, garnished with additional parmesan cheese and black pepper."
   )
+
+  # create some dishes
+Dish.create(title: 'Tacos', subtitle: 'Mexico', image_url: 'https://example.com/tacos.jpg', description: 'A classic Mexican dish')
+Dish.create(title: 'Sushi', subtitle: 'Japan', image_url: 'https://example.com/sushi.jpg', description: 'A Japanese delicacy')
+Dish.create(title: 'Pizza', subtitle: 'Italy', image_url: 'https://example.com/pizza.jpg', description: 'A beloved Italian dish')
+
   
