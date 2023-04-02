@@ -19,6 +19,35 @@ recipe1 = Recipe.create!(
     image_url: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fpublic-assets.meredithcorp.io%2F746bac4164e975dd05353a1bfa9c42e1%2F167720243762420230223_194750.jpg&q=60&c=sc&orient=true&poi=auto&h=512",
     category: "Indian"
   )
+
+  recipe3 = Recipe.create!(
+    title: "Beef Bourguignon",
+    description: "Beef bourguignon or bœuf bourguignon, also called beef Burgundy, and bœuf à la Bourguignonne, is a French beef stew braised in red wine, often red Burgundy, and beef stock, typically flavored with carrots, onions, garlic, and a bouquet garni, and garnished with pearl onions, mushrooms, and bacon",
+    image_url: "https://www.simplyrecipes.com/thmb/AOoI_NDk9fEJj1x4yMTpC_a3qz4=/2000x1333/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2009__01__beef-bourguignon-horiz-a-1800-06-e1593137468258-705x470.jpg",
+    category: "French"
+  )
+  
+  recipe4 = Recipe.create!(
+    title: "Pad Thai",
+    description: "Pad Thai is a popular Thai dish consisting of stir-fried rice noodles, vegetables, and often, tofu or chicken. The dish is typically served with a squeeze of fresh lime and chopped peanuts.",
+    image_url: "https://www.eatingthaifood.com/wp-content/uploads/2019/01/thai-pad-thai-recipe-2.jpg",
+    category: "Thai"
+  )
+  
+  recipe5 = Recipe.create!(
+    title: "Beef Stroganoff",
+    description: "Beef Stroganoff is a Russian dish made with sautéed pieces of beef, cooked in a sour cream sauce and served over egg noodles. It's a classic comfort food that's easy to make and always hits the spot.",
+    image_url: "https://www.simplyrecipes.com/thmb/FgKVzyPAj2C8OClA0JhC9p9X1ro=/2000x1333/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2009__12__beef-stroganoff-horiz-b-1800-4b4f9fada29e4dab9b851bb96b8f3e3d.jpg",
+    category: "Russian"
+  )
+  
+  recipe6 = Recipe.create!(
+    title: "Miso Soup",
+    description: "Miso soup is a traditional Japanese soup made with miso paste, dashi stock, and various other ingredients such as tofu, seaweed, and green onions. It's a staple of Japanese cuisine and is enjoyed as a breakfast food or as a light lunch or dinner.",
+    image_url: "https://www.jessicagavin.com/wp-content/uploads/2021/02/miso-soup-5-1200.jpg",
+    category: "Japanese"
+  )
+  
   
   # Add ingredients and instructions to recipe 1
   recipe1.ingredients.create!(
@@ -59,6 +88,10 @@ recipe1 = Recipe.create!(
   
   recipe1.instructions.create!(
     step: "Serve immediately, garnished with additional parmesan cheese and black pepper."
+  )
+
+  recipe3.ingredients.create!(
+    name: "Beef, red wine (often red Burgundy), beef stock, lardons, onions, bouquet garni, pearl onions, mushrooms"
   )
 
   # create some dishes
