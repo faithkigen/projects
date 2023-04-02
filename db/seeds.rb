@@ -101,22 +101,8 @@ recipe2.instructions.create!([
     { step: "Remove bouquet garni and serve beef bourguignon hot, garnished with fresh parsley." }
   ])
 
-  recipe4.ingredients.create!([
-    { name: "8 oz. rice noodles" },
-    { name: "2 tbsp. vegetable oil" },
-    { name: "3 garlic cloves, minced" },
-    { name: "2 shallots, thinly sliced" },
-    { name: "2 chicken breasts, sliced into thin strips (or tofu for vegetarian option)" },
-    { name: "2 eggs, beaten" },
-    { name: "1/4 cup chicken or vegetable broth" },
-    { name: "3 tbsp. fish sauce" },
-    { name: "2 tbsp. brown sugar" },
-    { name: "1/2 tsp. red chili flakes" },
-    { name: "1 cup bean sprouts" },
-    { name: "1/2 cup chopped peanuts" },
-    { name: "3 green onions, thinly sliced" },
-    { name: "1 lime, cut into wedges" }
-  ])
+  recipe4.ingredients.create!([  { name: "8 oz. rice noodles" },  { name: "2 tbsp. vegetable oil" },  { name: "3 garlic cloves, minced" },  { name: "2 shallots, thinly sliced" },  { name: "2 chicken breasts, sliced into thin strips" },  { name: "2 eggs, beaten" },  { name: "1/4 cup chicken or vegetable broth" },  { name: "3 tbsp. fish sauce" },  { name: "2 tbsp. brown sugar" },  { name: "1/2 tsp. red chili flakes" },  { name: "1 cup bean sprouts" },  { name: "1/2 cup chopped peanuts" },  { name: "3 green onions, thinly sliced" },  { name: "1 lime, cut into wedges" }])
+
   
   recipe4.instructions.create!([
     { step: "Soak rice noodles in warm water for about 10-15 minutes, or until softened." },
@@ -131,6 +117,36 @@ recipe2.instructions.create!([
     { step: "Remove from heat and divide into serving bowls." },
     { step: "Squeeze fresh lime over each bowl, and serve hot." }
   ])
+
+  recipe5.ingredients.create!(
+    [
+      { name: "1 lb beef sirloin, sliced into thin strips" },
+      { name: "1 onion, chopped" },
+      { name: "2 cloves garlic, minced" },
+      { name: "8 oz mushrooms, sliced" },
+      { name: "2 tbsp butter" },
+      { name: "1 tbsp olive oil" },
+      { name: "1 cup beef broth" },
+      { name: "1 cup sour cream" },
+      { name: "1 tbsp Dijon mustard" },
+      { name: "1 lb egg noodles" },
+      { name: "Salt and pepper to taste" }
+    ]
+  )
+  
+  recipe5.instructions.create!(
+    [
+      { step: "Cook egg noodles according to package instructions." },
+      { step: "In a large skillet, heat butter and olive oil over medium-high heat." },
+      { step: "Add beef strips and cook until browned, then remove from the pan." },
+      { step: "Add chopped onion to the same skillet and cook until softened, then add minced garlic and sliced mushrooms, and cook until mushrooms are softened." },
+      { step: "Add beef broth, sour cream, and Dijon mustard to the skillet and stir until well combined." },
+      { step: "Return beef strips to the skillet and stir until heated through." },
+      { step: "Season with salt and pepper to taste." },
+      { step: "Serve beef stroganoff over cooked egg noodles." }
+    ]
+  )
+  
   
   
 
