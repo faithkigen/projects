@@ -146,6 +146,26 @@ recipe2.instructions.create!([
       { step: "Serve beef stroganoff over cooked egg noodles." }
     ]
   )
+
+  recipe6.ingredients.create!(
+    [
+      { name: "4 cups dashi stock" },
+      { name: "1/4 cup miso paste" },
+      { name: "1/2 block firm tofu, cut into small cubes" },
+      { name: "1 sheet of nori seaweed, cut into small pieces" },
+      { name: "2 green onions, thinly sliced" }
+    ]
+  )
+  
+  recipe6.instructions.create!(
+    [
+      { step: "In a medium saucepan, bring the dashi stock to a boil." },
+      { step: "Reduce heat to low, and whisk in the miso paste until dissolved." },
+      { step: "Add the tofu and seaweed to the pot, and heat until the tofu is heated through." },
+      { step: "Ladle the soup into bowls and garnish with sliced green onions." }
+    ]
+  )
+  
   
   
   
