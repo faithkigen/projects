@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
     before_action :session_expired?, only: [:check_login_status]
+    before_action :authenticate_user!, only: [:create, :login]
+  
 
 
     def index

@@ -1,4 +1,6 @@
 class RecipesController < ApplicationController
+    before_action :authenticate_user!, only: [:create, :update]
+  
     # GET /recipes
     def index
       recipes = Recipe.all
@@ -11,12 +13,23 @@ class RecipesController < ApplicationController
       render json: recipe
     end
   
+    # POST /recipes
     def create
       recipe = Recipe.new(recipe_params)
       if recipe.save
         redirect_to recipe
       else
         render 'new'
+      end
+    end
+  
+    # PUT /recipes/:id
+    def update
+      recipe = Recipe.find(params[:id])
+      if recipe.update(recipe_params)
+        redirect_to recipe
+      else
+        render 'edit'
       end
     end
   
