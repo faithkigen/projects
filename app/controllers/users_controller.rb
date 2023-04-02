@@ -1,3 +1,5 @@
+class UsersController < ApplicationController
+
 # GET /users
 # Returns a list of all users
 def index
@@ -68,4 +70,5 @@ def index
   def user_params
     params.require(:user).permit(:username, :email, :password_digest, :updated_password)
   end
+end
   
