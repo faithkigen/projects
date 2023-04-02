@@ -100,6 +100,38 @@ recipe2.instructions.create!([
     { step: "Transfer to the preheated oven and cook for 2-3 hours, or until beef is tender." },
     { step: "Remove bouquet garni and serve beef bourguignon hot, garnished with fresh parsley." }
   ])
+
+  recipe4.ingredients.create!([
+    { name: "8 oz. rice noodles" },
+    { name: "2 tbsp. vegetable oil" },
+    { name: "3 garlic cloves, minced" },
+    { name: "2 shallots, thinly sliced" },
+    { name: "2 chicken breasts, sliced into thin strips (or tofu for vegetarian option)" },
+    { name: "2 eggs, beaten" },
+    { name: "1/4 cup chicken or vegetable broth" },
+    { name: "3 tbsp. fish sauce" },
+    { name: "2 tbsp. brown sugar" },
+    { name: "1/2 tsp. red chili flakes" },
+    { name: "1 cup bean sprouts" },
+    { name: "1/2 cup chopped peanuts" },
+    { name: "3 green onions, thinly sliced" },
+    { name: "1 lime, cut into wedges" }
+  ])
+  
+  recipe4.instructions.create!([
+    { step: "Soak rice noodles in warm water for about 10-15 minutes, or until softened." },
+    { step: "Heat vegetable oil in a large wok or skillet over high heat." },
+    { step: "Add garlic and shallots, and stir-fry for about 1-2 minutes, or until fragrant." },
+    { step: "Add chicken (or tofu), and stir-fry until cooked through, about 5-7 minutes." },
+    { step: "Push the chicken (or tofu) to one side of the wok or skillet, and add the beaten eggs to the other side." },
+    { step: "Scramble the eggs until cooked through, and then mix with the chicken (or tofu)." },
+    { step: "Add the soaked rice noodles to the wok or skillet, along with chicken (or vegetable) broth, fish sauce, brown sugar, and red chili flakes." },
+    { step: "Stir-fry the noodles and sauce for about 3-5 minutes, or until the noodles are cooked through and the sauce has thickened." },
+    { step: "Add bean sprouts, chopped peanuts, and green onions to the wok or skillet, and toss to combine." },
+    { step: "Remove from heat and divide into serving bowls." },
+    { step: "Squeeze fresh lime over each bowl, and serve hot." }
+  ])
+  
   
 
   # create some dishes
