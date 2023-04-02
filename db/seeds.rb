@@ -8,15 +8,15 @@ user4 =User.create(user_name: 'Hassan Hassan', email: 'hassanhassan@h.com', pass
 # Create a few sample recipes
 recipe1 = Recipe.create!(
     title: "Spaghetti Carbonara",
-    description: "Classic Italian dish made with spaghetti, eggs, pancetta, and parmesan cheese.",
-    image_url: "https://www.example.com/images/spaghetti-carbonara.jpg",
+    description: "This Spaghetti Carbonara is creamy and smooth, with a delicious savory flavor. If you follow this recipe, youll be serving the most amazing carbonara in no time.If you love Italian food, then you should try our delectable Tuscan chicken pasta with some focaccia bread..",
+    image_url: "https://media.istockphoto.com/id/518030640/photo/omelet-with-peppers.jpg?s=1024x1024&w=is&k=20&c=mfzzYBwE1OpZw3Rv9mGfIsDmf3pMKR1oZB4Ds2F2_hI=",
     category: "Italian"
   )
   
   recipe2 = Recipe.create!(
     title: "Chicken Tikka Masala",
-    description: "Indian dish made with marinated chicken in a tomato-based curry sauce.",
-    image_url: "https://www.example.com/images/chicken-tikka-masala.jpg",
+    description: "Chicken tikka masala is a dish consisting of roasted marinated chicken chunks in a spiced sauce. The sauce is usually creamy and orange-coloured. The dish was popularised by cooks from India living in Great Britain and is offered at restaurants around the world.",
+    image_url: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fpublic-assets.meredithcorp.io%2F746bac4164e975dd05353a1bfa9c42e1%2F167720243762420230223_194750.jpg&q=60&c=sc&orient=true&poi=auto&h=512",
     category: "Indian"
   )
   
