@@ -32,9 +32,11 @@ class RecipesController < ApplicationController
         render 'edit'
       end
     end
+
+    # Private methods
   
     private
-  
+  # add the params alllowed in recipe actions
     def recipe_params
       params.require(:recipe).permit(:title, :category, :description, :image_url,
         ingredients_attributes: [:id, :name, :_destroy],
