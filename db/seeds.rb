@@ -51,45 +51,20 @@ recipe1 = Recipe.create!(
   
   # Add ingredients and instructions to recipe 1
   recipe1.ingredients.create!(
-    name: "Spaghetti",
-    #quantity: "1 pound"
+name: ["Spaghetti", "Pancetta", "Eggs", "Parmesan cheese"] 
+    
   )
   
-  recipe1.ingredients.create!(
-    name: "Pancetta",
-    #quantity: "4 ounces"
-  )
+  recipe1.instructions.create!([
+    { step: "Cook spaghetti according to package instructions." },
+    { step: "Dice the pancetta and cook in a pan until crispy." },
+    { step: "In a mixing bowl, whisk together the eggs and parmesan cheese." },
+    { step: "Add the cooked spaghetti and pancetta to the mixing bowl, and toss together." },
+    { step: "Serve immediately, garnished with additional parmesan cheese and black pepper." }
+  ])
+  recipe2.ingredients
   
-  recipe1.ingredients.create!(
-    name: "Eggs",
-    #quantity: "3"
-  )
   
-  recipe1.ingredients.create!(
-    name: "Parmesan cheese",
-    #quantity: "1/2 cup"
-  )
-  
-  recipe1.instructions.create!(
-    step: "Cook spaghetti according to package instructions."
-  )
-  
-  recipe1.instructions.create!(
-    step: "Dice the pancetta and cook in a pan until crispy."
-  )
-  
-  recipe1.instructions.create!(
-    step: "In a mixing bowl, whisk together the eggs and parmesan cheese."
-  )
-  
-  recipe1.instructions.create!(
-    step: "Add the cooked spaghetti and pancetta to the mixing bowl, and toss together."
-  )
-  
-  recipe1.instructions.create!(
-    step: "Serve immediately, garnished with additional parmesan cheese and black pepper."
-  )
-
   recipe3.ingredients.create!(
     name: "Beef, red wine (often red Burgundy), beef stock, lardons, onions, bouquet garni, pearl onions, mushrooms"
   )
