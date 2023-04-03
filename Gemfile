@@ -22,6 +22,8 @@ gem "active_model_serializers"
 
 gem "jwt"
 
+gem "rack-cors"
+
 gem "bcrypt"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
