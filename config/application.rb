@@ -13,8 +13,7 @@ module Projects
 
     # config/application.rb
 
-module YourAppName
-  class Application < Rails::Application
+
     # ... other configuration options ...
     config.session_store :cookie_store, key: '_interslice_session'
 
